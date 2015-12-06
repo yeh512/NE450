@@ -18,7 +18,7 @@ c      93.5% U w/ density of 18.8g/cc,
 c      reflector: graphite, density 1.63 g/cc, ANL-5800, p582.
 c      ---
 100    1 -18.8         -10        imp:n=1       $U sphere
-200    2 -1.63      10 -20        imp:n=1       $5 cm graphite reflector
+200    2 -1.63      10 -20        imp:n=1       $8.2 cm graphite reflector
 150    0                20        imp:n=0       $void, outside sphere
 c      ---
 c
@@ -33,7 +33,7 @@ c      ---
 c      geometry
 c      ---
 10     SO  7.0      $Sphere radius
-20     SO  15.2     $Outer sphere radius including 5 cm of Graphite
+20     SO  15.2     $Outer sphere radius including 8.2 cm of Graphite
 c      ---
 c      end source geometry
 c      ---
