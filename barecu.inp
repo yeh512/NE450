@@ -1,0 +1,83 @@
+Bare Cylinder of 10.9 % enriched U with a density of 18.63 g/cc
+c      -----------------------------------------------------------------
+c      
+c      -----------------------------------------------------------------
+c      Dec. 1, 2015
+c      -----------------------------------------------------------------
+c
+c      ------------------------- MODEL NOTES ---------------------------
+c
+c      This is an example for a criticality model for NE450 HW5-13.
+c      The origin is 000.
+c      
+c      ----------------------- END MODEL NOTES -------------------------
+c      ------------------------- START CARDS ---------------------------
+c
+c      -----------
+c      cell cards
+c      -----------
+c      10.9% enriched U density = 18.63 g/cc, 
+c      ---
+100    1 -18.63       -10 11 -12       imp:n=1       $U cylinder
+150    0              10:-11:12       imp:n=0        $void, outside cylinder
+c
+c      -----------
+c      end cell cards
+c      -----------
+
+c      -----------
+c      surface cards
+c      -----------
+c      ---
+c      geometry
+c      ---
+10     CZ  26.65     $cylinder radius
+11     PZ  0        $bottom
+12     PZ  120.0    $top
+c      ---
+c      end source geometry
+c      ---
+c
+c      -----------
+c      end surface cards
+c      -----------
+
+c      -----------
+c      data cards
+c      -----------
+c
+c      ---
+MODE   n
+c      ---
+c
+c      ---
+c      end physics
+c
+c      ---
+c      source
+c      ---
+c
+c      ---
+KCODE  1000 1.0 15 115
+KSRC   0 0 60.0
+c      ---
+c
+c      ---
+c      end source
+c      ---
+c
+c      ---
+c      materials
+c      ---
+c
+c      ---
+c      10.9% enriched U
+M1     92235.66c -0.109    92238.66c    -0.891   
+c
+c      ---
+c      end materials
+c      ---
+c
+c      ----------- END CARDS -----------
+c
+c      -----------------------------------------------------------------
